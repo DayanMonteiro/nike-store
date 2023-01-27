@@ -93,8 +93,8 @@ const popularsales = {
 const highlight = {
   heading: "HIGHLIGHTS",
   title: "NIKE AIR WITH LIMITLESS CHOICES",
-  text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
-  btn: "Explore More",
+  text: "Nosso propósito é fazer o mundo avançar. Agimos construindo comunidades, protegendo nosso planeta e aumentando o acesso ao esporte.",
+  btn: "Saiba Mais",
   url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
   img: hightlightimg,
 };
@@ -102,8 +102,8 @@ const highlight = {
 const sneaker = {
   heading: "FEATURED",
   title: "NIKE SNEAKERS AIR LANCING SHOES",
-  text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
-  btn: "Explore More",
+  text: "O brilho vive no Tênis Nike Sneakers Air Lancing, a bola de basquete OG que dá um novo toque ao que você conhece melhor: sobreposições costuradas duráveis, acabamentos limpos e a quantidade perfeita de brilho para fazer você brilhar.",
+  btn: "Saiba Mais",
   url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
   img: sneakershoe,
 };
