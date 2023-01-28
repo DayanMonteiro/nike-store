@@ -31,12 +31,11 @@ import twitter from "../assets/twitter.svg";
 import youtube from "../assets/youtube.svg";
 import messenger from "../assets/messenger.svg";
 
-// api com os dados para o component hero = dados do banner
 const heroapi = {
-  title: "Jogue com o Electric Nike",
+  title: "Play With Electric Nike",
   subtitle: "Adapt 2.0 Sneakers",
   img: heroimg,
-  btntext: "Confira o Produto",
+  btntext: "Explore Product",
   videos: [
     { imgsrc: vcover1, clip: clip },
     { imgsrc: vcover2, clip: clip },
@@ -52,14 +51,14 @@ const heroapi = {
 };
 
 const popularsales = {
-  title: "Mais Vendidos",
+  title: "Popular Sales",
   items: [
     {
       id: "0p0x1",
       title: "Nike Addapt BB 2.0",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "4.9",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: psale2,
       price: "200",
       color: "from-blue-600 to-blue-500",
@@ -68,9 +67,9 @@ const popularsales = {
     {
       id: "0p0x2",
       title: "Nike Martine Rose",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "4.5",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: psale1,
       price: "200",
       color: "from-red-500 to-rose-500",
@@ -79,9 +78,9 @@ const popularsales = {
     {
       id: "0p0x3",
       title: "Nike Smart Shoe 2.0",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: psale3,
       price: "200",
       color: "from-violet-500 to-indigo-500",
@@ -93,8 +92,8 @@ const popularsales = {
 const highlight = {
   heading: "HIGHLIGHTS",
   title: "NIKE AIR WITH LIMITLESS CHOICES",
-  text: "Nosso propósito é fazer o mundo avançar. Agimos construindo comunidades, protegendo nosso planeta e aumentando o acesso ao esporte.",
-  btn: "Saiba Mais",
+  text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
+  btn: "Explore More",
   url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
   img: hightlightimg,
 };
@@ -102,21 +101,21 @@ const highlight = {
 const sneaker = {
   heading: "FEATURED",
   title: "NIKE SNEAKERS AIR LANCING SHOES",
-  text: "O brilho vive no Tênis Nike Sneakers Air Lancing, a bola de basquete OG que dá um novo toque ao que você conhece melhor: sobreposições costuradas duráveis, acabamentos limpos e a quantidade perfeita de brilho para fazer você brilhar.",
-  btn: "Saiba Mais",
+  text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+  btn: "Explore More",
   url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
   img: sneakershoe,
 };
 
 const toprateslaes = {
-  title: "Top avaliados",
+  title: "Top Rated Sales",
   items: [
     {
       id: "0M0x1",
       title: "Nike Air Low Premium",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product7,
       price: "150",
       color: "from-sky-600 to-indigo-600",
@@ -125,9 +124,9 @@ const toprateslaes = {
     {
       id: "0M0x2",
       title: "Nike Air Force Green",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product2,
       price: "150",
       color: "from-green-500 to-emerald-500",
@@ -136,9 +135,9 @@ const toprateslaes = {
     {
       id: "0M0x3",
       title: "Nike Addapt BB Rose",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product3,
       price: "150",
       color: "from-red-500 to-rose-500",
@@ -147,9 +146,9 @@ const toprateslaes = {
     {
       id: "0M0x4",
       title: "Nike Air Premium",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product4,
       price: "150",
       color: "from-orange-500 to-amber-500",
@@ -158,9 +157,9 @@ const toprateslaes = {
     {
       id: "0M0x5",
       title: "Nike Adapt BB Pro",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product5,
       price: "150",
       color: "from-gray-900 to-yellow-500",
@@ -169,9 +168,9 @@ const toprateslaes = {
     {
       id: "0M0x6",
       title: "Air Jordan PR3",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product6,
       price: "150",
       color: "from-blue-500 to-cyan-500",
@@ -180,9 +179,9 @@ const toprateslaes = {
     {
       id: "0M0x7",
       title: "Nike Multi Smart Shoe",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product1,
       price: "150",
       color: "from-yellow-500 to-yellow-500",
@@ -191,9 +190,9 @@ const toprateslaes = {
     {
       id: "0M0x8",
       title: "Nike Jordan Air Max",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product9,
       price: "150",
       color: "from-[#936550] to-orange-900",
@@ -202,9 +201,9 @@ const toprateslaes = {
     {
       id: "0M0x9",
       title: "Nike Old Max-x",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product10,
       price: "150",
       color: "from-indigo-700 to-indigo-700",
@@ -213,9 +212,9 @@ const toprateslaes = {
     {
       id: "0M0x10",
       title: "Nike Lime Jordan 11",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product12,
       price: "150",
       color: "from-green-600 to-lime-500",
@@ -224,9 +223,9 @@ const toprateslaes = {
     {
       id: "0M0x11",
       title: "Nike Air Black Max",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product11,
       price: "150",
       color: "from-slate-900 to-black",
@@ -235,9 +234,9 @@ const toprateslaes = {
     {
       id: "0M0x12",
       title: "Nike Zoom Max",
-      text: "Tênis de corrida masculino",
+      text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Comprar Agora",
+      btn: "Buy Now",
       img: product8,
       price: "150",
       color: "from-blue-900 to-blue-500",
