@@ -71,7 +71,6 @@ const Stories = ({ story: { title, news } }) => {
                   </div>
 
                   <div className="flex items-center justify-center px-4 w-full">
-                    {/* "role" é um atributo HTML que permite especificar a função ou acessibilidade de um elemento em particular. Ele é usado principalmente para ajudar os leitores de tela a fornecer informações mais precisas sobre o conteúdo da página para os usuários com necessidades de acessibilidade. Alguns exemplos de roles comuns incluem "heading", "button", "navigation" e "main". */}
                     <a
                       href={val.url}
                       target="_blank"
