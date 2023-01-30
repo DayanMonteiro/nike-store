@@ -1,7 +1,11 @@
 import React from "react";
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useDispatch } from "react-redux";
-import { setRemoveItemFromCart } from "../../app/CartSlice";
+import {
+  setDecreaseItemQTY,
+  setIncreaseItemQTY,
+  setRemoveItemFromCart,
+} from "../../app/CartSlice";
 
 const CartItem = ({
   item: { id, title, text, img, color, shadow, price, cartQuantity },
@@ -11,6 +15,36 @@ const CartItem = ({
   const onRemoveItem = () => {
     dispatch(
       setRemoveItemFromCart({
+        id,
+        title,
+        text,
+        img,
+        color,
+        shadow,
+        price,
+        cartQuantity,
+      })
+    );
+  };
+
+  const onIncreaseItemQTY = () => {
+    dispatch(
+      setIncreaseItemQTY({
+        id,
+        title,
+        text,
+        img,
+        color,
+        shadow,
+        price,
+        cartQuantity,
+      })
+    );
+  };
+
+  const onDecreaseItemQTY = () => {
+    dispatch(
+      setDecreaseItemQTY({
         id,
         title,
         text,
@@ -49,6 +83,7 @@ const CartItem = ({
               <button
                 type="button"
                 className="bg-theme-cart rounded w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center active:scale-90"
+                onClick={onDecreaseItemQTY}
               >
                 <MinusIcon className="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]" />
               </button>
@@ -58,6 +93,7 @@ const CartItem = ({
               <button
                 type="button"
                 className="bg-theme-cart rounded w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center active:scale-90"
+                onClick={onIncreaseItemQTY}
               >
                 <PlusIcon className="w-5 h-5 lg:w-4 lg:h-4 text-white stroke-[2]" />
               </button>

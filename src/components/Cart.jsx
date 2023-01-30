@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   selectCartItems,
   selectCartState,
+  setClearCartItems,
   setCloseCart,
 } from "../app/CartSlice";
 import CartCount from "./cart/CartCount";
@@ -24,6 +25,10 @@ const Cart = () => {
     );
   };
 
+  const onClearCartItems = () => {
+    dispatch(setClearCartItems());
+  };
+
   return (
     <>
       <div
@@ -37,10 +42,13 @@ const Cart = () => {
           className={`
           blur-effect-theme h-screen max-w-xl w-full absolute right-0 `}
         >
-          <CartCount onCartToggle={onCartToggle} />
+          <CartCount
+            onCartToggle={onCartToggle}
+            onClearCartItems={onClearCartItems}
+          />
 
           {cartItem?.length === 0 ? (
-            <CartEmpty />
+            <CartEmpty onCartToggle={onCartToggle} />
           ) : (
             <div>
               <div className="flex items-start justify-start flex-col gap-y-7 lg:gap-y-5 overflow-y-scroll h-[81vh] scroll-smooth scroll-hidden py-3">
